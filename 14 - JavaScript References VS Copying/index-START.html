@@ -12,6 +12,9 @@
     // Let's say we have an array
     const players = ['Wes', 'Sarah', 'Ryan', 'Poppy'];
 
+    const team = Array.from(players);
+
+
     // and we want to make a copy of it.
 
     // You might think we can just do something like this:
@@ -41,6 +44,10 @@
       name: 'Wes Bos',
       age: 80
     };
+
+    const updatePerson = Object.assign({}, person, { number: 99, age: 12 });
+    console.log(updatePerson);
+
 
     // and think we make a copy:
 
